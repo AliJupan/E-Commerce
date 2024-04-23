@@ -1,0 +1,129 @@
+.Navbar-Container {
+  display: flex;
+  width: 100%;
+  background-color: #112d4e;
+}
+.Navbar {
+  color: white;
+}
+.Navbar-Title-Container {
+  text-align: start;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+.Navbar-Title {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  padding-left: 5%;
+}
+.Navbar-Dropdown-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.Navbar-Components-Container {
+  background-color: hsl(212, 64%, 25%);
+  display: flex;
+  width: 100%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.Navbar-Search-Container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 55%;
+}
+.Navbar-Search {
+  padding: 0.4rem;
+  border-radius: 5px;
+  margin: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Navbar-Search-Button {
+  padding: 0.4rem;
+  border-radius: 5px;
+  background-color: hsl(212, 64%, 25%);
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin: 5px;
+  border-radius: 5px;
+  color: white;
+  border: 0.5px white solid;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Navbar-Search-Button:hover {
+  padding: 0.4rem;
+  border-radius: 5px;
+  background-color: hsl(212, 64%, 15%);
+  cursor: pointer;
+}
+.Navbar-User-Container {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Navbar-User-Container span {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+.Navbar-User-Container span:hover {
+  cursor: pointer;
+  background-color: hsl(212, 64%, 10%);
+}
+.Navbar-SocialMedia-Container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 25%;
+}
+.Navbar-SocialMedia {
+  padding-left: 5%;
+  display: flex;
+}
+.Navbar-SocialMedia a {
+  color: white; /* Set the color to white */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.Navbar-SocialMedia a:hover {
+  color: white; /* Optional: Specify color on hover */
+  background-color: hsl(212, 64%, 15%);
+}
+.Navbar-Language-Container {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Navbar-Language-Container img {
+  width: 30px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.Navbar-Language-Container img:hover {
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
