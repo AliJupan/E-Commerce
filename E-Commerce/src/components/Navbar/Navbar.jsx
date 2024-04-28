@@ -1,15 +1,20 @@
 import "./Navbar.css";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import SearchIcon from "@mui/icons-material/Search";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
 import Dropdown from "../Dropdown/Dropdown";
+import FavDropdown from "../Dropdown/FavDropdown";
+import { favProducts } from "../../class/Product";
 
-function Navbar() {
+function Navbar({ favProducts, removeFromFav }) {
   const Apple = ["Iphone", "AirPods", "AppleWatch"];
+
+  const GetAllFav = () => {
+    console.log(favProducts);
+  };
   return (
     <nav className="Navbar">
       <div className="Navbar-Components-Container">
@@ -68,7 +73,10 @@ function Navbar() {
         </div>
         <div className="Navbar-User-Container">
           <span>
-            <FavoriteBorderIcon fontSize="medium" />
+            <FavDropdown
+              favProducts={favProducts}
+              removeFromFav={removeFromFav}
+            />
           </span>
           <span>
             <ShoppingCartIcon fontSize="medium" />
